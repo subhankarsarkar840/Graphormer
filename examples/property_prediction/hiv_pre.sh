@@ -9,7 +9,7 @@ batch_size=128
 tot_updates=$((33000*epoch/batch_size/n_gpu))
 warmup_updates=$((tot_updates*16/100))
 
-CUDA_VISIBLE_DEVICES=3 fairseq-train \
+CUDA_VISIBLE_DEVICES=1 fairseq-train \
 --user-dir ../../graphormer \
 --num-workers 16 \
 --ddp-backend=legacy_ddp \

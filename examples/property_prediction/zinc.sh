@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 #!/usr/bin/env bash
 
-CUDA_VISIBLE_DEVICES=0 fairseq-train \
+CUDA_VISIBLE_DEVICES=1 fairseq-train \
 --user-dir ../../graphormer \
 --num-workers 16 \
 --ddp-backend=legacy_ddp \
