@@ -5,7 +5,7 @@
 n_gpu=1
 epoch=4
 max_epoch=$((epoch + 1))
-batch_size=128
+batch_size=64
 tot_updates=$((33000*epoch/batch_size/n_gpu))
 warmup_updates=$((tot_updates*16/100))
 
